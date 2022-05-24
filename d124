@@ -665,7 +665,8 @@ RunService:BindToRenderStep("AimLock", 0, function()
  
         -- // Set the camera to face towards the Hit
         CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
-    end)
+    end
+ end)
  end)
  Section1:CreateLabel("Press q to lock")
  local Toggle1 = Section1:CreateToggle("Fov Lock ", nil, function(State)
